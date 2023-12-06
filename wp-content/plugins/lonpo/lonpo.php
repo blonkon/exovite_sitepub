@@ -26,15 +26,15 @@ Author: Ibrahim B Diakitre
         echo '<input type="text" id="cf-name" name="cf-name" pattern="[a-zA-Z0-9 ]+" placeholder="Entrez votre nom" value="' . ( isset( $_POST["cf-name"] ) ? esc_attr( $_POST["cf-name"] ) : '' ) . '" size="40" style="height: 40px" />';
         echo '</p>';
         echo '<p>';
-        echo '<label for="cf-message" style="color: #06668E; font-weight: bold;">Message </label> <br />';
-        echo '<textarea id="cf-message" rows="10" cols="35" name="cf-message" placeholder="Entrez votre message">' . ( isset( $_POST["cf-message"] ) ? esc_attr( $_POST["cf-message"] ) : '' ) . '</textarea>';
+        echo '<label for="cf-message" style="color: #06668E;width: 50%; font-weight: bold;">Message </label> <br />';
+        echo '<textarea id="cf-message" rows="10" style="width: 50%;" cols="35" name="cf-message" placeholder="Entrez votre message">' . ( isset( $_POST["cf-message"] ) ? esc_attr( $_POST["cf-message"] ) : '' ) . '</textarea>';
         echo '</p>';
         // Uncomment the following lines if you want to include a subject field
         // echo '<p>';
         // echo '<label for="cf-subject" style="color: #5E358A; font-weight: bold;">Subject <span style="color: red;">*</span></label> <br />';
         // echo '<input type="text" id="cf-subject" name="cf-subject" pattern="[a-zA-Z ]+" placeholder="Enter the subject" value="' . ( isset( $_POST["cf-subject"] ) ? esc_attr( $_POST["cf-subject"] ) : '' ) . '" size="40" />';
         // echo '</p>';
-        echo '<p><input type="submit" name="cf-submitted" value="Envoyer" style="width: 50%;background-color:#06668E;color:white" /></p>';
+        echo '<p><input type="submit" name="cf-submitted" value="Envoyer" style="width: 25%;background-color:#06668E;color:white" /></p>';
         echo '</form>';
     }
     
